@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet"/>
+    <title>BootStrap UI</title>
+    
+</head>
+<body>
+    <header>
+        <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white px-3 border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#"><i class="fas fa-gem me-1"></i>Felix-<span class="text-danger">ITs</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+              <li class="nav-item">
+                <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#service" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#service">Service 1</a></li>
+                  <li><a class="dropdown-item" href="#service">Service 2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#service">Service 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar end -->
+
+    <!-- Slider start -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-200" alt="...">
+            <div class="carousel-caption ">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-200" alt="...">
+            <div class="carousel-caption">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-200" alt="...">
+            <div class="carousel-caption ">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-200" alt="...">
+            <div class="carousel-caption ">
+              <h5>Fourth slide label</h5>
+              <p>Some representative placeholder content for the Fourth slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Slider end -->
+
+    </header>
+    
+    <!-- About section start -->
+    <section class="about my-5" id="about">
+        <div class="container">
+          <div class="text-center" data-aos="fade-down">
+            <h1 class="fontPlayfair">About <span class="text-danger">Us</span></h1>
+            <hr class="w-25 m-auto" />
+          </div>
+          <div class="row">
+            <div class="col-md-6 clo-sm-12 col-lg-6" data-aos="fade-right">
+              <h2 class="fontPlayfair my-3">About Company Heading</h2>
+              <p class="fontPlaywrite mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptates iusto id iste accusamus ipsa provident pariatur expedita quibusdam, quo at tempora aut, vitae maxime eveniet facere! Ipsum, error quidem rem eveniet, et voluptatum cumque fugiat totam dolorum doloremque quaerat unde ea vel vitae dolor tenetur ab neque sapiente beatae.</p>
+              <button type="button" class="btn btn-light w-25 my-3">Get More</button>
+              <button type="button" class="btn btn-light w-25 my-3">Know More</button>
+            </div>
+            <div class="col-md-6 clo-sm-12 col-lg-6" data-aos="fade-left">
+              <img class="img-fluid my-5" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image 1">
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Our Services start -->
+    <section class="services py-5 bg-light" id="service">
+      <div class="container">
+        <div class="text-center" data-aos="zoom-in">
+          <h1 class="fontPlayfair">Our <span class="text-danger">Services</span></h1>
+          <hr class="w-25 m-auto">
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-4 col-sm-12 col-lg-4 my-2">
+            <div class="card p-4 text-center" data-aos="flip-left">
+              <div class="card-body">
+                <i class="bi bi-x-diamond-fill bg-primary text-white p-2 rounded"></i>
+                <h5 class="card-title fontPlayfair m-3">Special title treatment</h5>
+                <p class="card-text fontPlaywrite">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 my-2">
+            <div class="card p-4 text-center" data-aos="flip-left">
+              <div class="card-body">
+                <i class="bi bi-x-diamond-fill bg-primary text-white p-2 rounded"></i>
+                <h5 class="card-title fontPlayfair m-3">Special title treatment</h5>
+                <p class="card-text fontPlaywrite">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 my-2">
+            <div class="card p-4 text-center" data-aos="flip-left">
+              <div class="card-body">
+                <i class="bi bi-x-diamond-fill bg-primary text-white p-2 rounded"></i>
+                <h5 class="card-title fontPlayfair m-3">Special title treatment</h5>
+                <p class="card-text fontPlaywrite">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-4 col-sm-12 col-lg-4 my-2">
+            <div class="card p-4 text-center" data-aos="flip-left">
+              <div class="card-body">
+                <i class="bi bi-x-diamond-fill bg-primary text-white p-2 rounded"></i>
+                <h5 class="card-title fontPlayfair m-3">Special title treatment</h5>
+                <p class="card-text fontPlaywrite">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 my-2">
+            <div class="card p-4 text-center" data-aos="flip-left">
+              <div class="card-body">
+                <i class="bi bi-x-diamond-fill bg-primary text-white p-2 rounded"></i>
+                <h5 class="card-title fontPlayfair m-3">Special title treatment</h5>
+                <p class="card-text fontPlaywrite">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4 my-2">
+            <div class="card p-4 text-center" data-aos="flip-left">
+              <div class="card-body">
+                <i class="bi bi-x-diamond-fill bg-primary text-white p-2 rounded"></i>
+                <h5 class="card-title fontPlayfair m-3">Special title treatment</h5>
+                <p class="card-text fontPlaywrite">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+    </section>
+    <!-- Our Services end -->
+
+    <!-- Our Team start -->
+    <section class="team my-5" id="team">
+      <div class="container">
+        <div class="text-center" data-aos="zoom-out">
+          <h1 class="fontPlayfair">Our <span class="text-danger">Team</span></h1>
+          <hr class="w-25 m-auto">
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center my-3" data-aos="zoom-in">
+              <div class="card-body">
+                <img class="img-fluid rounded-circle border border-dark p-1 m-4 " src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                <h5 class="card-title fontPlayfair">Card title</h5>
+                <p class="card-text fontPlaywrite">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center my-3" data-aos="zoom-in">
+              <div class="card-body">
+                <img class="img-fluid rounded-circle border border-dark p-1 m-4 " src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                <h5 class="card-title fontPlayfair">Card title</h5>
+                <p class="card-text fontPlaywrite">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-lg-4">
+            <div class="card text-center my-3" data-aos="zoom-in">
+              <div class="card-body">
+                <img class="img-fluid rounded-circle border border-dark p-1 m-4 " src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                <h5 class="card-title fontPlayfair">Card title</h5>
+                <p class="card-text fontPlaywrite">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Team end -->
+
+    <!-- Connect Section Start -->
+    <section>
+      <div class="contact py-5 bg-light" id="contact">
+        <div class="container">
+          <div class="text-center">
+            <h1 class="fontPlayfair">Feel free to <span class="text-danger">Connect</span></h1>
+            <hr class="w-25 m-auto">
+          </div>
+
+          <div class="row my-5">
+            <div class="col-md-6 col-sm-12 col-lg-6">
+              <!-- Form -->
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-dark mt-4 w-100">Sign in</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 col-sm-12 col-lg-6 m-auto text-end">
+              <!-- Image -->
+              <img class="img-fluid img-thumbnail p-2 m-2" src="https://media.istockphoto.com/id/1297832726/photo/portrait-of-a-smiling-young-businessman.jpg?s=612x612&w=0&k=20&c=32Qg7TnqfGkrDwTL3q0X0Kx9ab3JDzuqxzp4poH39zc=" alt="image 1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Connect Section End -->
+
+    <!-- Footer start -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between bg-dark p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block text-white">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="text-white">
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h4 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Felix-<span class="text-danger">ITs</span>
+              </h4>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2025 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js">
+    </script>
+  </body>
+</html>
